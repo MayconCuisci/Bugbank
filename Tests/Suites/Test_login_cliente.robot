@@ -38,6 +38,16 @@ Cenário de teste 04: Validando realizar o login com usuario invalido ou não ca
 
 
 Cenário de teste 05: Validando realizar o login com usuario
+    #Cadastrar usuário#
+	Aguardar o botão Registrar esteja visível (validação de login)
+    Deve poder clicar no botão Registrar (validação de login)
+    Deve poder digitar no campo Email (validação de login)
+    Deve poder digitar no campo Nome (validação de login)
+    Deve poder digitar no campo Senha (validação de login)
+    Deve poder digitar no campo Confirmação de senha (validação de login)
+    Deve poder clicar no botão Cadastrar (validação de login))
+    Deve poder clicar no botão fechar de conta criada (validação de login)
+	#Realizar login#
     Aguardar o elemento de texto email esteja visível
     Deve poder digitar no campo email de usuario cadastrado
     Deve poder digitar no campo senha de usuario cadastrado

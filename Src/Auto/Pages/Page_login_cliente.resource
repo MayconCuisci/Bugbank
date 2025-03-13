@@ -49,6 +49,32 @@ Deve validar a mensagem de retorno Usuário ou senha inválido
     Sleep    2s
 
 #Cenário 5# 
+
+Aguardar o botão Registrar esteja visível (validação de login)
+    Wait Until Element Is Visible  xpath=//*[@id="__next"]/div/div[2]/div/div[1]/form/div[3]/button[2]
+
+Deve poder clicar no botão Registrar (validação de login)
+    Click Button      xpath=//*[@id="__next"]/div/div[2]/div/div[1]/form/div[3]/button[2]
+
+Deve poder digitar no campo Email (validação de login)
+    Input Text   xpath=//*[@id="__next"]/div/div[2]/div/div[2]/form/div[2]/input    mayconc@yopmail.com
+    Sleep    2s
+
+Deve poder digitar no campo Nome (validação de login)
+    Input Text   xpath=//*[@id="__next"]/div/div[2]/div/div[2]/form/div[3]/input    Maycon
+
+Deve poder digitar no campo Senha (validação de login)
+    Input Text   xpath=//*[@id="__next"]/div/div[2]/div/div[2]/form/div[4]/div/input    Maycon@123
+    sleep    2s
+Deve poder digitar no campo Confirmação de senha (validação de login)
+    Input Text   xpath=//*[@id="__next"]/div/div[2]/div/div[2]/form/div[5]/div/input    Maycon@123
+    sleep    2s
+
+Deve poder clicar no botão Cadastrar (validação de login)
+    Execute JavaScript    document.evaluate("//button[text()='Cadastrar']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
+    sleep    2s
+Deve poder clicar no botão fechar de conta criada (validação de login)
+    Click Element      xpath=//*[@id="btnCloseModal"]
     
 Deve poder digitar no campo email de usuario cadastrado
     Input Text   xpath=//*[@id="__next"]/div/div[2]/div/div[1]/form/div[1]/input    mayconc@yopmail.com
